@@ -14,3 +14,13 @@ test('basic test', async ({ page }) => {
   // Check the the page is updated based on the form
   await expect(page.getByRole('heading', { name: 'Test 1' })).toBeVisible();
 });
+
+
+test('API test', async ({ request }) => {
+  const resp = await request.get(`/basic-rest`);
+  expect(resp.ok()).toBeTruthy();
+  
+  const responseBody = await resp.json()
+  expect(responseBody).toHaveProperty("name", "Playwright");
+  expect(responseBody).toHaveProperty("description", "A web testing framework.");
+});

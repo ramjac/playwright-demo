@@ -1,0 +1,24 @@
+{
+  "name": "playwright-demo",
+  "version": "1.0.0",
+  "description": "A small demonstration of [Playwright](https://playwright.dev/) testing for web pages and APIs.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^20.8.9"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "module": "^1.2.5",
+    "promises": "^0.2.5"
+  }
+}

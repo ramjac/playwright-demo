@@ -2,7 +2,7 @@
 
 A small demonstration of [Playwright](https://playwright.dev/) testing for web pages and APIs.
 
-## What's covered by this repository
+## TODO (eventually "What's covered by this repository")
 
 * Web page tests
 	* Simple find one thing on the page
